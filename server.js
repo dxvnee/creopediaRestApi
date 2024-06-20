@@ -21,15 +21,15 @@ mongoose.connect("mongodb+srv://dxvnee:DTuzSPD1ip0vDr1C@creopediadb.cdylyrm.mong
     .then(() => {
         console.log('Connected to database!');
         const PORT = 3000
-        app.listen(PORT, () => {
-            console.log('Server started on port 3000');
+//         app.listen(PORT, () => {
+//             console.log('Server started on port 3000');
 
-            // ngrok.connect(PORT).then(ngrokUrl => {
-            //     console.log(`Ngrok tunnel in: ${ngrokUrl}`)
-            // }).catch(error => {
-            //     console.log(`Couldn't tunnel ngrok: ${error}`)
-// }
-        });
+//             // ngrok.connect(PORT).then(ngrokUrl => {
+//             //     console.log(`Ngrok tunnel in: ${ngrokUrl}`)
+//             // }).catch(error => {
+//             //     console.log(`Couldn't tunnel ngrok: ${error}`)
+// // }
+//         });
 })
     .catch((error) => {
         console.error('Connection failed!', error);
