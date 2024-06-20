@@ -33,4 +33,8 @@ mongoose.connect("mongodb+srv://dxvnee:DTuzSPD1ip0vDr1C@creopediadb.cdylyrm.mong
 })
     .catch((error) => {
         console.error('Connection failed!', error);
-    });
+    }
+);
+
+module.exports = app
+
