@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const creoRoute = require('./routes/creo.route.js');
+const creoRoute = require('../routes/creo.route.js');
 const ngrok = require('ngrok');
 
 
@@ -13,9 +13,6 @@ app.use(express.urlencoded({ extended: false }));
 // Routes
 app.use('/api/creo', creoRoute);
 
-app.get('/', (req, res) => {
-    res.send("Hello from Node API");
-});
 
 mongoose.connect("mongodb+srv://dxvnee:DTuzSPD1ip0vDr1C@creopediadb.cdylyrm.mongodb.net/Creo-API?retryWrites=true&w=majority&appName=CreopediaDB", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
