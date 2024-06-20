@@ -75,6 +75,9 @@ const createCreoWithImage = async (req, res) => {
     try{
         const userId = String(req.header('Authorization'))
         const { name, element, size } = req.body;
+        console.log(name)
+        console.log(element)
+        console.log(size)
         const image = req.file; 
 
         if (!name || !element || !size) {
