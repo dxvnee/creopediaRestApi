@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 mongoose.connect("mongodb+srv://dxvnee:DTuzSPD1ip0vDr1C@creopediadb.cdylyrm.mongodb.net/Creo-API?retryWrites=true&w=majority&appName=CreopediaDB", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to database!');
-        const PORT = 3000
+        // const PORT = 3000
 //         app.listen(PORT, () => {
 //             console.log('Server started on port 3000');
 
@@ -36,5 +36,5 @@ mongoose.connect("mongodb+srv://dxvnee:DTuzSPD1ip0vDr1C@creopediadb.cdylyrm.mong
     }
 );
 
-module.exports = app
+module.exports = app;
 
